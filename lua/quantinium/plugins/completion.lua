@@ -18,6 +18,7 @@ return {
 
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
+    require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/lua/quantinium/snippets"})
 
     cmp.setup({
       completion = {
